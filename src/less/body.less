@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    color: @textFont;
+    // background-color:rgb(252, 244, 183);
+    background: linear-gradient(to right, rgb(252, 244, 183), rgb(248, 235, 139));
+    cursor: default;
+}
+#body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    // display: flex;
+    // justify-content: center;
+    background: @bg-color;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.primaryButton {
+    border-radius: 5px;
+    padding: 7px;
+    background-color: @mainColor;
+    border: 1px solid @mainColor;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+
+        border: 1px solid @mainColor;
+        box-shadow: 0px 0px 10px black;
+    }
+}
+
+.secondaryButton {
+    border-radius: 5px;
+    padding: 7px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+
+    &:hover {
+        background-color: white;
+        color: gray;
+        border: 1px solid gray;
+        box-shadow: 0px 0px 10px gray;
+    }
+}
+
+.tertiaryButton {
+    border-radius: 5px;
+    border: 1px solid @mainColor;
+    padding: 7px;
+    background-color: rgb(255, 255, 255);
+    color: @mainColor;
+    cursor: pointer;
+    user-select: none;
+}

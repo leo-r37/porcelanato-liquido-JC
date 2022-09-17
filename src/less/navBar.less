@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 6px @line;
+}
+
+
+.navButton {
+    border-radius: 5px;
+    padding: 7px;
+    justify-self: flex-end;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: @mainColor;
+    }
+}
+
+
+#butonActiv {
+    background-color: @mainColor;
+    color: black;
+    font-weight: bold;
+}

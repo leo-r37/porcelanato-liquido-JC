@@ -1,0 +1,209 @@
+.section { 
+    width: 100%;
+    height: 30rem;
+    margin-top: 20px;
+    // border: 1px solid black;
+
+
+
+    display: flex;
+    background-color: white;
+
+    .paragraph {
+        width: 60%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            padding-left: 20px;
+        }
+
+        p {
+            width: 80%;
+            text-align: center;
+            align-self: center;
+            // border: 1px solid black;
+        }
+
+        a {
+            width: 40%;
+            text-align: center;
+            align-self: flex-end;
+            margin-top: 40px;
+            position: relative;
+            right: 40px;
+            text-decoration: none;
+        }
+    }
+
+    .img-container {
+        display: flex;
+        width: 70%;
+        padding: 10px;
+        // border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: auto;
+            height: 80%;
+            border-radius: 3rem;
+            border: 2px solid rgba(228, 228, 228, 0.993);
+            box-shadow: 5px 5px 10px @line;
+        }
+    }
+
+}
+
+#galery {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    .rowImg {
+        display: flex;
+        width: 90%;
+        height: 25%;
+        border: 1px solid black;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .galeryImgContainer {
+            width: 6rem;
+            height: 6rem;
+            border: 1px solid black;
+            border-radius: 5px;
+
+            &:hover {
+                position: relative;
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+
+    }
+}
+
+#academy {
+    .img-container {
+        img {
+            width: 80%;
+        }
+    }
+}
+
+#store {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #storeTitle {
+        // border: 1px solid black;
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h2 {
+            // border: 1px solid @secondColor;
+            position: relative;
+            right: 10px;
+            padding: 10px;
+            border-radius: 5PX;
+            background-color: @mainColor;
+            color: black;
+            box-shadow: 5px 5px 10px @line;
+        }
+
+        span {
+            font-size: 1.2rem;
+        }
+    }
+
+    #itemsContainer {
+        // border: 1px solid black;
+        width: 90%;
+        height: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .card {
+            width: 10rem;
+            height: 12rem;
+            bottom: 0;
+
+            .itemTitle {
+                // border: 1px solid black;
+                width: 90%;
+                height: 1.3rem;
+            }
+            .itemImg {
+                // border: 1px solid black;
+                border-radius: 8px;
+                width: 90%;
+                height: 5rem;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                    border-radius: 8px;
+                    box-shadow: 5px 5px 10px @line;
+                }
+            }
+            .itemDescription {
+                // border: 1px solid black;
+                width: 90%;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    #storeButtonContainer {
+        // border: 1px solid black;
+        width: 90%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-size: 1.2rem;
+
+            a {
+                margin: 2rem;
+                text-decoration: none;
+            }
+        }
+
+        img {
+            margin-left: 1rem;
+            margin-right: 0.2rem;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        #number {
+            font-weight: bold;
+            color: @mainColor;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 5px 5px 10px black;
+            margin-right: 2rem;
+        }
+    }
+}
+
+#aboutUs {
+    .img-container {
+        img {
+            width: 80%;
+        }
+    }
+}
