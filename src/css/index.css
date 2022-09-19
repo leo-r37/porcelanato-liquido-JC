@@ -1,18 +1,3 @@
-@media (max-width: 1100px) {
-  html {
-    font-size: 14px;
-  }
-}
-@media (max-width: 950px) {
-  html {
-    font-size: 12px;
-  }
-}
-@media (max-width: 850px) {
-  html {
-    font-size: 4px;
-  }
-}
 body {
   display: flex;
   justify-content: center;
@@ -27,6 +12,11 @@ body {
   width: 80%;
   background: #dae4e9;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media (max-width: 700px) {
+  #body {
+    width: 100%;
+  }
 }
 .primaryButton {
   border-radius: 0.3125rem;
@@ -215,19 +205,34 @@ nav {
   display: flex;
   width: 90%;
   height: 25%;
-  border: 0.0625rem solid black;
+  box-shadow: 5px 5px 10px #d6d6d6;
   justify-content: space-evenly;
   align-items: center;
 }
 #galery .rowImg .galeryImgContainer {
   width: 6rem;
   height: 6rem;
-  border: 0.0625rem solid black;
+  border: 0.1875rem solid white;
+  box-shadow: 5px 5px 10px black;
   border-radius: 0.3125rem;
+  overflow: hidden;
 }
 #galery .rowImg .galeryImgContainer:hover {
   position: relative;
   transform: scale(2.5);
+  transition: 0.5s;
+  border: 0.1875rem solid white;
+}
+#galery .rowImg .galeryImgContainer img {
+  width: 100%;
+  height: auto;
+}
+@supports (object-fit: cover) {
+  #galery .rowImg .galeryImgContainer img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
 }
 #academy .img-container img {
   width: 80%;
@@ -374,4 +379,27 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 1100px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 14px;
+  }
+  html #body {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
 }
