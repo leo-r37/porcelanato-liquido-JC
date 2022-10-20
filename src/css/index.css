@@ -239,6 +239,13 @@ nav {
 #academy .img-container img {
   width: 80%;
 }
+#academy .paragraph {
+  display: flex;
+}
+#academy .paragraph h3 {
+  align-self: flex-end;
+  margin-right: 3rem;
+}
 #store {
   display: flex;
   flex-direction: column;
@@ -325,8 +332,26 @@ nav {
   text-shadow: -0.0625rem 0 black, 0 0.0625rem black, 0.0625rem 0 black, 0 -0.0625rem black, 0.3125rem 0.3125rem 0.625rem black;
   margin-right: 2rem;
 }
+#aboutUs {
+  height: 35rem;
+}
 #aboutUs .img-container img {
   width: 80%;
+}
+#aboutUs .paragraph {
+  padding: 10px;
+  margin-left: 60px;
+}
+#aboutUs .paragraph h3 {
+  border-bottom: 0;
+}
+#aboutUs .paragraph p {
+  margin: 0;
+}
+.ico {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
 }
 #contact {
   background-color: #d6d6d6;
