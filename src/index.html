@@ -28,14 +28,13 @@
 
             <div id="mainBanner">
                 <div id="bannerDiv">
-                <!-- aca va la imagen y el texto -->
 
-                <div id="bannerImgContainer">
-                    <img src="./img/banner.jpg" id="bannerImg" alt='bannerImg'/>
-                </div>
+                    <div id="bannerImgContainer">
+                        <img src="./img/banner.jpg" id="bannerImg" alt='bannerImg'/>
+                    </div>
 
-                <h2>JC Porcelanato Líquido</h2>
-                <p>Convertimos tu sueño en realidad</p>
+                    <h2>JC Porcelanato Líquido</h2>
+                    <p>Convertimos tu sueño en realidad</p>
                 </div>
 
                 <div id="cardsDiv">
@@ -252,9 +251,13 @@
                     <span>Email: consultas@jcporcelanato.com</span>
 
                     <span>Seguinos en nuestras redes sociales</span>
-                    <img class="ico" src="./img/facebook.png" />
-                    <img class="ico" src="./img/instagram.png" />
-                    <img class="ico" src="./img/whatsapp.png" />
+
+                    <div id="icoContainer">
+                        <img class="ico" src="./img/facebook.png" />
+                        <img class="ico" src="./img/instagram.png" />
+                        <img class="ico" src="./img/whatsapp.png" />
+                    </div>
+
                 </div>
 
                 <div id="contactDivisor"><hr></div>  <!-- Divisor vertical-->
@@ -290,8 +293,8 @@
                     <textarea name="msj"></textarea>
 
                     <div>
-                    <input type="checkbox" name="consentimiento">
-                    <span>Deseo recibir novedades y descuentos por email</span>
+                    <input id='checkBox' type="checkbox" name="consentimiento">
+                    <label>Deseo recibir novedades y descuentos por email</label>
                     </div>
 
                     <input type="submit" value="Enviar" class="primaryButton">

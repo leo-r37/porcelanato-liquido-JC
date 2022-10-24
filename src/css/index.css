@@ -437,6 +437,129 @@ footer {
 }
 @media (max-width: 700px) {
   html {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  #navBar {
+    display: none;
+  }
+  #bannerDiv h2 {
+    bottom: 50px;
+  }
+  #bannerDiv p {
+    bottom: 70px;
+    font-size: 16px;
+  }
+  #cardsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 18rem;
+  }
+  #cardsDiv .card {
+    width: 80%;
+    bottom: 4rem;
+    margin-bottom: 1rem;
+  }
+  .section {
+    flex-direction: column;
+    height: auto;
+  }
+  .section .paragraph {
+    width: 90%;
+    align-items: center;
+  }
+  .section .paragraph h2 {
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .section .paragraph p {
+    width: 100%;
+    margin: 0;
+  }
+  .section .paragraph a {
+    width: 100%;
+    margin-top: 0;
+    position: initial;
+    right: 0;
+    align-self: center;
+  }
+  .section .img-container {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .section .img-container img {
+    width: 90%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  #galery #row2 {
+    display: none;
+  }
+  #galery #row3 {
+    display: none;
+  }
+  #galery .rowImg .galeryImgContainer:hover {
+    transform: scale(1);
+  }
+  #academy .img-container img {
+    width: 90%;
+    margin-top: 20px;
+  }
+  #academy .paragraph {
+    padding-top: 0;
+  }
+  #aboutUs {
+    height: auto;
+  }
+  #aboutUs .paragraph {
+    margin: 0;
+    padding: 1.25rem;
+    padding-bottom: 0;
+  }
+  #aboutUs .paragraph h3 {
+    margin: 0;
+  }
+  #aboutUs .paragraph p {
+    margin-bottom: 10px;
+  }
+  #aboutUs .img-container img {
+    width: 90%;
+  }
+  #contact {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  #contact .contactDiv {
+    width: 90%;
+  }
+  #contact .contactDiv p {
+    margin: 0;
+  }
+  #contact .contactDiv span {
+    margin-top: 10px;
+  }
+  #contact .contactDiv input {
+    width: 100%;
+  }
+  #contact .contactDiv #checkbox {
+    width: 20px;
+  }
+  #contact .contactDiv .primaryButton {
+    margin-top: 20px;
+  }
+  #contact #contactDivisor {
+    display: none;
+  }
+  #contact #contactData #icoContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer span {
+    width: 80%;
+    font-size: 20px;
   }
 }
